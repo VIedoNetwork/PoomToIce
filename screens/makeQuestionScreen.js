@@ -12,7 +12,7 @@ class addData extends Component {
 
   constructor() {
     super();
-    this.usersCollectionRef = firestore().collection('question1');
+    this.usersCollectionRef = firestore().collection('SF210').doc('Subject').collection('Exam')
     this.state = {
       question: "",
       choice1: "",
@@ -128,5 +128,7 @@ const styles = StyleSheet.create({
       marginBottom: 100
   
     }
-  });
-  export default addData;
+  }
+);
+
+export default addData;

@@ -23,6 +23,11 @@ export default function homeScreen({navigation}) {
         onPress={() => navigation.navigate('studentScore')}
       />
       <FilledButton
+        title={'Test'}
+        style={styles.loginButton}
+        onPress={() => navigation.navigate('Test Teacher')}
+      />
+      <FilledButton
         title={'Logout'}
         style={styles.loginButton}
         onPress={() => logout()}

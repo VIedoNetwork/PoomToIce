@@ -9,7 +9,9 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 // const poom  =   firestore().collection("poom").doc('JVqMmqwT0C3oCnz7inp7').get()
 
-class examTest extends React.Component {
+const poom = 'Eiei 5555'
+
+class test extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,9 +19,13 @@ class examTest extends React.Component {
 
   render() {
     return (
-      <Text>
-        Eiei
-      </Text>
+        <ScrollView>
+          <View style={styles.container}>
+            <Text>
+                {poom}
+            </Text>
+          </View>
+        </ScrollView>
       
     );
   }
@@ -49,4 +55,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default examTest;
+export default test;
